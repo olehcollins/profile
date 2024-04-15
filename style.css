@@ -18,15 +18,19 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 h1 {
-  color: #575f7d;
+  color: hsl(356, 78%, 44%);
   font-size: 32px;
   font-weight: 900;
 }
 h2 {
   color: #7ece90;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: lighter;
   font-weight: 500;
+}
+p {
+  color: hsl(356, 78%, 44%);
+  font-size: 1.5rem;
 }
 a {
   font-family: "Roboto", sans-serif;
@@ -39,7 +43,7 @@ a:hover {
   color: black;
 }
 .img {
-  width: 300px;
+  width: 25rem;
   border-radius: 1rem;
 }
 /* Custom design with class (99% of your design) */
@@ -80,17 +84,25 @@ a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px rgba(240, 9, 9, 0.669);
+  transition: 0.5s ease-in-out;
+  margin-bottom: 4rem;
 }
 
 .card-white {
   background-color: white;
   padding: 40px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px rgba(240, 9, 9, 0.669);
   border-radius: 4px;
   margin: 20px 0px;
   text-align: center;
   border-radius: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+.card-white:hover,
+.card-white-intro:hover {
+  transform: translateY(-10px);
 }
 
 .btn-blue {
@@ -113,11 +125,13 @@ a:hover {
   padding: 10px;
 }
 .list-inline i {
-  font-size: 50px;
+  font-size: 100px;
   color: rgb(230, 230, 230);
+  transition: 0.5s ease-in-out;
 }
 .list-inline i:hover {
   color: rgb(208, 45, 45);
+  transform: translateY(-5px);
 }
 
 /* Design adjustments using id (1% design remaining) */
